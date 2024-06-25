@@ -1,6 +1,12 @@
 <style>
+    html, body {
+        background-color: #ececec;
+<!--background: center no-repeat url('https://sun9-40.userapi.com/impg/kvfgwKAwnZ8YqAsvINnxt_m7caGzNZpZsCpoug/LPEDy7KALHc.jpg?size=900x741&quality=95&sign=0253fe703d2df9304c26d71ca0d60b74&type=album');-->
+    }
+
     * {
         font-family: Didot;
+
     }
     a {
         font-weight: bold;
@@ -9,26 +15,40 @@
         font-size: 24px;
     }
     h1 {
+        margin: 0;
         font-size: 75px;
-        font-family: Didot;
+
+    }
+    h3 {
+        font-size: 40px;
+        font-family: Impact;
+        margin: 0;
+        margin-top: 30px;
+        margin-left: 800px;
+        color: #2F4F4F;
     }
     img {
         width: 150px;
         height: 150px;
+        margin-right: 10px;
     }
     .product {
-        border: 5px brown solid;
+        border: 5px #B22222 solid;
         display: flex;
         height: 150px;
         margin-top: 12px;
         padding: 10px;
         width: 900px;
         margin-left: 10px;
+        border-radius: 20px;
+    }
+    .productstring {
+        display: flex;
     }
     .name_product {
         width: 200px;
         font-size: 16px;
-        color: Grey;
+        color: #696969;
         margin-left: 10px;
         text-transform: uppercase;
     }
@@ -42,26 +62,37 @@
     }
     .buy {
         margin-left: auto;
+        height: 50px;
+        width: 100px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
     }
 </style>
 
+<!--Названия-->
 
 <h1>Silinso</h1>
 
-
-<img src="https://sun9-40.userapi.com/impg/kvfgwKAwnZ8YqAsvINnxt_m7caGzNZpZsCpoug/LPEDy7KALHc.jpg?size=900x741&quality=95&sign=0253fe703d2df9304c26d71ca0d60b74&type=album"/>
+<!--Ссылки-->
 
 <a href='/'>Главная<a>
-<a href='/'>Примеры работ<a>
 <a href='/'>Связь с мастером<a>
-<a href="/">Заказs</a>
+<a href="/">Заказать</a>
 
+<!--Продукты-->
 
+<h3>Примеры работ</h3>
 
+<!--Продукт №1-№2-->
+
+<div class="productstring">
+
+<!--Продукт №1-->
 
 <div class="product">
 
-    <img src="https://avatars.mds.yandex.net/i?id=5739d6ae5534503121b6134f99b3bf178c72f566-10804261-images-thumbs&n=13"/>
+    <img src="https://avatars.mds.yandex.net/i?id=ddf99bcac04b06ab0218dbccb30475c302e05d1b-8341813-images-thumbs&n=13"/>
     <div>
         <div class="name_product">
             <h2>Картхолдер</h2>
@@ -70,28 +101,15 @@
         <div class="info">
             <p>Карточник из натуральной кожи наивысшего качества</p>
         </div>
-
     </div>
+
     <div class="buy">
         <button>Дополнительная информация</button>
     </div>
-    <div class="product">
-    <img src="https://avatars.mds.yandex.net/i?id=5739d6ae5534503121b6134f99b3bf178c72f566-10804261-images-thumbs&n=13"/>
-    <div>
-        <div class="name_product">
-            <h2>Картхолдер</h2>
-        </div>
 
-        <div class="info">
-            <p>Карточник из натуральной кожи наивысшего качества</p>
-        </div>
-
-    </div>
-    <div class="buy">
-        <button>Дополнительная информация</button>
-    </div>
-    </div>
 </div>
+
+<!--Продукт №2-->
 
 <div class="product">
 
@@ -110,4 +128,54 @@
     <div class="buy">
         <button>Дополнительная информация</button>
     </div>
+</div>
+
+</div>
+
+<!--Продукт №3-№4-->
+
+<div class="productstring">
+
+<!--Продукт №3-->
+
+<div class="product">
+
+    <img src="https://avatars.mds.yandex.net/i?id=e49031d074583dc3b06a85bbf3259072b63270d4-12184992-images-thumbs&n=13"/>
+
+    <div>
+        <div class="name_product">
+            <h2>Обложка для паспорта</h2>
+        </div>
+
+        <div class="info">
+            <p>Кожанная обложка для паспорта</p>
+        </div>
+
+    </div>
+    <div class="buy">
+        <button>Дополнительная информация</button>
+    </div>
+</div>
+
+<!--Продукт №4-->
+
+<div class="product">
+
+    <img src="https://avatars.mds.yandex.net/i?id=b9fcf779a015f79bea29cfe4c100f8126d8863ea-11525436-images-thumbs&n=13"/>
+
+    <div>
+        <div class="name_product">
+            <h2>Сумка</h2>
+        </div>
+
+        <div class="info">
+            <p>Качественная и вместительная кожанная сумка</p>
+        </div>
+
+    </div>
+    <div class="buy">
+        <button>Дополнительная информация</button>
+    </div>
+</div>
+
 </div>
