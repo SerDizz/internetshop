@@ -1,200 +1,49 @@
-<style>
-    html, body {
-        background-color: #B0C4DE;
-<!--        background: center no-repeat url('https://sun9-40.userapi.com/impg/kvfgwKAwnZ8YqAsvINnxt_m7caGzNZpZsCpoug/LPEDy7KALHc.jpg?size=900x741&quality=95&sign=0253fe703d2df9304c26d71ca0d60b74&type=album');-->
-<!--        width: 2000px;-->
-<!--        height: 3300px;-->
-    }
+{% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
 
-    * {
-        font-family: "Didact Gothic";
+<div class="navigation">
+    <!--Названия-->
+    <div class="name">
+        <h1>Silinso</h1>
+    </div>
 
-    }
-    a {
-        font-weight: bold;
-        color: #6B8E23;
-        margin-left: 35px;
-        font-size: 24px;
-    }
-    .name {
-        margin: 0;
-        font-size: 45px;
-        font-style: italic;
-        margin: 0;
-        margin-right: 40px:
+    <!--Ссылки-->
 
-    }
-    .works {
-        font-size: 40px;
-        font-family: Impact;
-        margin: 0;
-        margin-top: 30px;
-        margin-left: 800px;
-        color: #2F4F4F;
-    }
-    img {
-        width: 150px;
-        height: 150px;
-        margin-right: 10px;
-    }
-    .product {
-        border: 5px #B22222 solid;
-        display: flex;
-        height: 150px;
-        margin-top: 12px;
-        padding: 10px;
-        width: 47.5%;
-        margin-left: 10px;
-        border-radius: 20px;
-        background-color: white;
-    }
-    .productstring {
-        display: flex;
-    }
-    .name_product {
-        width: 200px;
-        font-size: 16px;
-        color: #696969;
-        margin-left: 10px;
-        text-transform: uppercase;
-    }
-    .info {
-        margin-top: 40px;
-        margin-left: 10px;
-        font-size: 18px;
-    }
-    p {
-        width: 400px;
-    }
-    button {
-        height: 50px;
-        width: 100px;
-        border: none;
-        border-radius: 10px;
-        cursor: pointer;
-        color: green;
-    }
-    .price {
-        margin-left: auto;
-        text-align: center;
-    }
-</style>
-
-<!--Названия-->
-<div class="name">
-    <h1>Silinso</h1>
+    <a href='/'>Главная<a>
+    <a href='/'>Связь с мастером<a>
+    <a href="/">Заказать</a>
 </div>
 
-<!--Ссылки-->
-
-<a href='/'>Главная<a>
-<a href='/'>Связь с мастером<a>
-<a href="/">Заказать</a>
 
 <!--Продукты-->
 <div class="works">
-    <h3>Примеры работ</h3>
+    <h3>Каталог</h3>
 </div>
 
-<!--Продукт №1-№2-->
 
-<div class="productstring">
 
-<!--Продукт №1-->
-
+<div class="productlist">
+{% for product in products %}
 <div class="product">
 
-    <img src="https://avatars.mds.yandex.net/i?id=ddf99bcac04b06ab0218dbccb30475c302e05d1b-8341813-images-thumbs&n=13"/>
+    <img src="{{ product.image_url }}"/>
     <div>
         <div class="name_product">
-            <h2>Картхолдер</h2>
+            <h2>{{ product.name }}</h2>
         </div>
 
         <div class="info">
-            <p>Карточник из натуральной кожи наивысшего качества</p>
+            <p>{{ product.description }}</p>
         </div>
     </div>
 
     <div class="price">
-        <h3>999р</h3>
-        <button>Дополнительная информация</button>
+        <h3>{{ product.price }} ₽</h3>
+        <button>Информация</button>
     </div>
 
 </div>
+{% endfor %}
 
-<!--Продукт №2-->
-
-<div class="product">
-
-    <img src="https://avatars.mds.yandex.net/i?id=8fa4cd3606300606e8fea3481942515f9f2072d5-11950916-images-thumbs&n=13"/>
-
-    <div>
-        <div class="name_product">
-            <h2>Ножны</h2>
-        </div>
-
-        <div class="info">
-            <p>Ножны ручной работы из натуральной кожи</p>
-        </div>
-
-    </div>
-    <div class="price">
-        <h3>999р</h3>
-        <button>Дополнительная информация</button>
-    </div>
-
-</div>
-
-</div>
-
-<!--Продукт №3-№4-->
-
-<div class="productstring">
-
-<!--Продукт №3-->
-
-<div class="product">
-
-    <img src="https://avatars.mds.yandex.net/i?id=e49031d074583dc3b06a85bbf3259072b63270d4-12184992-images-thumbs&n=13"/>
-
-    <div>
-        <div class="name_product">
-            <h2>Обложка для паспорта</h2>
-        </div>
-
-        <div class="info">
-            <p>Кожанная обложка для паспорта</p>
-        </div>
-
-    </div>
-    <div class="price">
-        <h3>999р</h3>
-        <button>Дополнительная информация</button>
-    </div>
-
-</div>
-
-<!--Продукт №4-->
-
-<div class="product">
-
-    <img src="https://avatars.mds.yandex.net/i?id=b9fcf779a015f79bea29cfe4c100f8126d8863ea-11525436-images-thumbs&n=13"/>
-
-    <div>
-        <div class="name_product">
-            <h2>Сумка</h2>
-        </div>
-
-        <div class="info">
-            <p>Качественная и вместительная кожанная сумка</p>
-        </div>
-
-    </div>
-    <div class="price">
-        <h3>999р</h3>
-        <button>Дополнительная информация</button>
-    </div>
-
-</div>
 
 </div>

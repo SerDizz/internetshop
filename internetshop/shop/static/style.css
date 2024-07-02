@@ -1,0 +1,92 @@
+html, body {
+    background-color: #DCDCDC;
+<!--background: center no-repeat url('https://sun9-40.userapi.com/impg/kvfgwKAwnZ8YqAsvINnxt_m7caGzNZpZsCpoug/LPEDy7KALHc.jpg?size=900x741&quality=95&sign=0253fe703d2df9304c26d71ca0d60b74&type=album');-->
+<!--width: 2000px;-->
+<!--height: 3300px;-->
+}
+
+* {
+    font-family: "Didact Gothic";
+
+}
+a {
+    font-weight: bold;
+    color: #008B8B;
+    text-decoration: none;
+    margin-left: 35px;
+    font-size: 24px;
+}
+.name {
+    margin: 0;
+    font-size: 45px;
+    font-style: italic;
+    margin: 0;
+    margin-right: 40px:
+
+}
+.navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    height: 80px;
+}
+.works {
+    font-size: 40px;
+    font-family: Impact;
+    margin: 0;
+    margin-top: 30px;
+    margin-left: 800px;
+    color: #4682B4;
+}
+img {
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+}
+.product {
+    border: 5px #B22222 solid;
+    display: flex;
+    height: 150px;
+    margin-top: 12px;
+    padding: 10px;
+    width: 47.5%;
+    margin-left: 10px;
+    border-radius: 20px;
+    background-color: white;
+}
+.productlist {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.name_product {
+    width: 200px;
+    font-size: 16px;
+    color: #696969;
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+.info {
+    margin-top: 40px;
+    margin-left: 10px;
+    font-size: 18px;
+    width: 200px;
+}
+p {
+    width: 400px;
+}
+button {
+    height: 50px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.price {
+    margin-left: auto;
+    text-align: center;
+}
