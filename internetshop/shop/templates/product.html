@@ -15,15 +15,16 @@
 </div>
 
 <div class="ProductDetails">
-       <img class="ProductDetails_img" src="https://avatars.mds.yandex.net/i?id=06b3c4667c95082e6e16ebbe0a3605723bf5109f-12497202-images-thumbs&n=13"/>
+       <img class="ProductDetails_img" src="{{ product.image_url }}"/>
+
 
 
     <div class="productTitle">
-        <h2>Набедренная сумка</h2>
+        <h2>{{ product.name }}</h2>
 
         <div class="productprice">
             <div class="huny">
-                <h3>999 ₽</h3>
+                <h2>{{ product.price }} ₽</h2>
             </div>
 
             <button>Buy</button>
@@ -36,6 +37,6 @@
 
 <div class="productDescription">
     <h2>Описание:</h2>
-    <p>АПАМ</p>
+    <p>{{ product.description }}</p>
 
 </div>
