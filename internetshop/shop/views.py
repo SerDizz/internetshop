@@ -3,7 +3,6 @@ from django.shortcuts import render
 
 from .models import Product
 
-
 # Create your views here.
 def home(request):
     products = Product.objects.all()
@@ -13,5 +12,7 @@ def home(request):
         'products': products
     })
 
-def view_product(request):
+def view_product(request, id):
+    product = Product.odjects.filter(id=id).first()
+    print(product)
     return render(request, "product.html")

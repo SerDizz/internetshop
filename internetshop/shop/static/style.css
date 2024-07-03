@@ -42,7 +42,7 @@ a {
     margin-left: 800px;
     color: #4682B4;
 }
-img {
+.img_product {
     width: 150px;
     height: 150px;
     margin-right: 10px;
@@ -50,7 +50,7 @@ img {
 .product {
     border: 5px #B22222 solid;
     display: flex;
-    height: 150px;
+    min-height: 150px;
     margin-top: 12px;
     padding: 10px;
     width: 47.5%;
@@ -74,11 +74,9 @@ img {
     margin-top: 40px;
     margin-left: 10px;
     font-size: 18px;
-    width: 200px;
+    width: 100%;
 }
-p {
-    width: 400px;
-}
+
 button {
     height: 50px;
     width: 100px;
@@ -89,4 +87,52 @@ button {
 .price {
     margin-left: auto;
     text-align: center;
+}
+.ProductDetails {
+    border-radius: 20px;
+    background: white;
+    display: flex;
+    flex-direction: row;
+    width: 55%;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ProductDetails_img {
+    width: 50%;
+    height: 50%;
+}
+.productprice {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+}
+.huny {
+    margin-right: 20px;
+}
+.filter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+.productTitle {
+    margin-top: 20px;
+}
+.productTitle * {
+    font-style: normal;
+}
+.productDescription {
+    border-radius: 20px;
+    background: white;
+    width: 55%;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.productDescription * {
+    margin: 20px;
 }
