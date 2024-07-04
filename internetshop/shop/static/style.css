@@ -63,6 +63,9 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
 }
+button {
+    margin-left: auto;
+}
 .name_product {
     width: 200px;
     font-size: 16px;
@@ -83,12 +86,14 @@ button {
     border: none;
     border-radius: 10px;
     cursor: pointer;
+    background: #DCDCDC;
 }
 .price {
     margin-left: auto;
     text-align: center;
 }
 .ProductDetails {
+    padding: 10px;
     border-radius: 20px;
     background: white;
     display: flex;
@@ -111,11 +116,25 @@ button {
     margin-right: 20px;
 }
 .filter {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    background: white;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchInput {
+    font-size: 20px;
+    border: none;
+    background-color: #efefef;
+    padding: 11px;
+    margin-right: 10px;
+    border-radius: 8px;
+    width: 100%;
 }
 .productTitle {
     margin-top: 20px;
@@ -133,7 +152,16 @@ button {
     margin-right: auto;
     padding-top: 5px;
     padding-bottom: 5px;
+    padding: 10px;
 }
 .productDescription * {
     margin: 20px;
 }
+.error_products_found {
+    margin-left: auto;
+    margin-right: auto;
+}
+.icon_error_products_found {
+    margin-left: 145px;
+}
+
