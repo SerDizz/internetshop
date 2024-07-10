@@ -9,3 +9,12 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Review(models.Model):
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+
+    autor = models.CharField(max_length=256)
+    rating = models.IntegerField()
+    usage_duration = models.IntegerField()
+    text = models.TextField()

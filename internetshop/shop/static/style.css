@@ -164,4 +164,9 @@ button {
 .icon_error_products_found {
     margin-left: 145px;
 }
+.review {
+    background-color: #DCDCDC;
+    padding: 10px;
+    border-radius: 10px;
+}
 
