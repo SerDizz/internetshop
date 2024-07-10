@@ -46,14 +46,27 @@
     <div class="review">
         <h3>Автор</h3>
         <h3>Оценка: <span style="color: green">***</span></h3>
-        <h3>Время после покупки: 12 месяцев</h3>
+        <h3>Срок использования: 12 месяцев</h3>
         <p>Текст отзыва</p>
     </div>
 
-    <form>
-        <input>
+    <form class="createReview">
+        <label for="author">Автор:</label>
+        <input name="author">
+        <label for="rating">Оценка:</label>
+        <select style="background-color: #EBEBEB">
+            <option>*</option>
+            <option>**</option>
+            <option>***</option>
+            <option>****</option>
+            <option>*****</option>
+        </select>
 
-
+        <label for="duration">Срок использования:</label>
+        <input name="duration">
+        <label for="review">Текст отзыва:</label>
+        <textarea name="review"></textarea>
+        <button>Опубликовать</button>
     </form>
 
 
