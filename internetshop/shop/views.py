@@ -1,5 +1,5 @@
 from django.http import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 from .models import Product, Review
 import telebot
@@ -50,15 +50,31 @@ def view_product(request, id):
     })
 
 
-def payment(request):
+def payment(request, id):
+    product = Product.objects.filter(id=id).first()
     if request.method == "POST":
         name = request.POST.get('name')
         address = request.POST.get('address')
-        bot.send_message(CHAT_ID, f'''📦 Новый заказ: jjj
+        bot.send_message(CHAT_ID, f'''📦 Новый заказ: {product.name}
+Цена: {product.price}
 ФИО покупателя: {name}
 Адрес доставки: {address}
 ''')
 
-    return render(request, "payment.html")
+        return redirect('/success')
+
+    return render(request, "payment.html", {
+        'product': product
+    })
+
+def success(request):
+    return render(request, 'success.html')
+
+
+def master(request):
+    return render(request, 'master.html')
+
+def createProducts(request):
+    return render(request, 'createProducts.html')
 
 

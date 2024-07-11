@@ -7,6 +7,11 @@
         <h1>Silinso</h1>
     </div>
 
+
+    <a href='/'>Главная<a>
+    <a href='/'>Связь с мастером<a>
+    <a href="/">Создать своё изделие</a>
+
 </div>
 
 <!--Профиль-->
@@ -16,10 +21,10 @@
 </div>
 
 <div class="paymentCard">
-    <h2>Товар: Картхолдер</h2>
-    <img class="img_product" src="/static/photo.jpg"/>
+    <h2>Товар: {{ product.name }}</h2>
+    <img class="img_product" src="{{ product.image_url }}"/>
     <div class="vspace"></div>
-    <h2>К оплате: 999р</h2>
+    <h2>К оплате: {{ product.price }}</h2>
     <h2>Реквезиты для перевода:</h2>
     <div class="copyPhone">
         <h3 style="margin-left: auto; padding: 3px;">88005553535</h3>
