@@ -22,7 +22,8 @@ def home(request):
 
 def view_product(request, id):
     product = Product.objects.filter(id=id).first()
-    print(product)
+    review = product.review_set.all()
     return render(request, "product.html", {
-        'product': product
+        'product': product,
+        'review': review,
     })
