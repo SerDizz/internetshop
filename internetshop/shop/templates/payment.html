@@ -27,13 +27,14 @@
     </div>
     <h2>ФИО мастера: ***</h2>
     <form class="paymentForm" method="post">
+        {% csrf_token %}
         <label>Адрес доставки:</label>
         <input required name="address">
         <label>Ваше ФИО:</label>
         <input required name="name">
+        <div class="vspace"></div>
+        <button style="width: 100%;">Оплатил</button>
     </form>
-
-    <button style="width: 100%;">Оплатил</button>
 </div>
 
 <script>
