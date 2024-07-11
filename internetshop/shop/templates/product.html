@@ -44,25 +44,38 @@
 <div class="productDescription">
     <h2>Отзывы:</h2>
 
-    {% for review in reviews %}
+    {% for review in reviewы %}
     <div class="review">
         <h3>{{ review.author }}</h3>
-        <h3>Оценка: <span style="color: green">{{ review.rating }}</span></h3>
+        <h3>Оценка:
+            {% if review.rating == 1 %}
+            <span>⭐</span>
+            {% elif review.rating == 2 %}
+            <span>⭐⭐</span>
+            {% elif review.rating == 3 %}
+            <span>⭐⭐⭐</span>
+            {% elif review.rating == 4 %}
+            <span>⭐⭐⭐⭐</span>
+            {% elif review.rating == 5 %}
+            <span>⭐⭐⭐⭐⭐</span>
+            {% endif %}
+        </h3>
         <h3>Срок использования: {{ review.usage_duration }} месяцев</h3>
         <p>{{ review.text }}</p>
     </div>
     {% endfor %}
 
-    <form class="createReview">
+    <form class="createReview" method="post">
+        {% csrf_token %}
         <label for="author">Автор:</label>
         <input name="author">
         <label for="rating">Оценка:</label>
-        <select style="background-color: #EBEBEB">
-            <option>*</option>
-            <option>**</option>
-            <option>***</option>
-            <option>****</option>
-            <option>*****</option>
+        <select name="rating" style="background-color: #EBEBEB">
+            <option value="1">⭐</option>
+            <option value="2">⭐⭐</option>
+            <option value="3">⭐⭐⭐</option>
+            <option value="4">⭐⭐⭐⭐</option>
+            <option value="5">⭐⭐⭐⭐⭐</option>
         </select>
 
         <label for="duration">Срок использования:</label>
