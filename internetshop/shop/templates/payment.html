@@ -1,0 +1,36 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+
+<div class="navigation">
+    <!--Названия-->
+    <div class="name">
+        <h1>Silinso</h1>
+    </div>
+
+</div>
+
+<!--Профиль-->
+<div class="profile">
+    <button1><img src = "https://i.postimg.cc/Mp5qrQG0/image.png"/><button1>
+    <button1>Профиль<button1>
+</div>
+
+<div class="paymentCard">
+    <h2>Товар: Картхолдер</h2>
+    <img class="img_product" src="/static/photo.jpg"/>
+    <div class="vspace"></div>
+    <h2>К оплате: 999р</h2>
+    <h2>Реквезиты для перевода:</h2>
+    <div class="copyPhone">
+        <h3 style="margin-left: auto; padding: 3px;">88005553535</h3>
+        <button2 style="background-color: white; margin-top: 15px; margin-right: auto; padding: 3px;" id="copyPhone"><img src="https://img.icons8.com/?size=30&id=59773&format=png"/></button2>
+    </div>
+    <h2>ФИО мастера: ***</h2>
+    <button style="width: 100%;">Оплатил</button>
+</div>
+
+<script>
+document.getElementById('copyPhone').onclick = function() {
+    navigator.clipboard.writeText('88005553535');
+}
+</script>

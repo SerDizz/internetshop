@@ -21,7 +21,8 @@ a {
     font-size: 45px;
     font-style: italic;
     margin: 0;
-    margin-right: 40px:
+    margin-right: 40px;
+    color: #002781;
 
 }
 .navigation {
@@ -48,7 +49,7 @@ a {
     margin-right: 10px;
 }
 .product {
-    border: 5px #B22222 solid;
+    border: 3px #79B3C4 solid;
     display: flex;
     min-height: 150px;
     margin-top: 12px;
@@ -81,12 +82,13 @@ button {
 }
 
 button {
+    color: white;
     height: 50px;
     width: 100px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    background: #DCDCDC;
+    background-color: #134A81;
 }
 .price {
     margin-left: auto;
@@ -193,4 +195,45 @@ button {
     width: fit-content;
     padding: 10px !important;
     margin-left: auto !important;
+}
+.paymentCard {
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    text-align: center;
+    border-radius: 20px;
+    background: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+.profile {
+    position: absolute;
+    top: 10px;
+
+
+    width: 120px;
+    right: 0;
+    text-align: center;
+}
+
+.profile img {
+    width: auto;
+    height: 50px;
+}
+
+.profile h2 {
+    margin: 10;
+    font-size: 14px;
+}
+button1 {
+    cursor: pointer;
+}
+.copyPhone {
+    display: flex;
+    cursor: pointer;
+    margin-top: 0;
+
+}
+.vspace {
+    height: 25px;
 }

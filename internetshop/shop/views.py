@@ -36,10 +36,14 @@ def view_product(request, id):
             usage_duration=usage_duration,
             text=text,
         )
-        review.save()
+
 
     review = product.review_set.all()
     return render(request, "product.html", {
         'product': product,
         'review': review,
     })
+
+
+def payment(request):
+    return render(request, "payment.html")
