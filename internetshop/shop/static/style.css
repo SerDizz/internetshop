@@ -181,10 +181,11 @@ button {
 
     font-size: 20px;
     border: none;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 .createReview input {
     background-color: #EBEBEB;
+    padding: 8px !important;
 }
 .createReview textarea {
     background-color: #EBEBEB;
@@ -236,4 +237,15 @@ button1 {
 }
 .vspace {
     height: 25px;
+}
+.paymentForm {
+    display: flex;
+    flex-direction: column;
+}
+.paymentForm input {
+    background-color: #efefef;
+    padding: 8px !important;
+    border-radius: 15px;
+    border: none;
+
 }

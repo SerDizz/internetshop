@@ -74,9 +74,9 @@
     <form class="createReview" method="post">
         {% csrf_token %}
         <label for="author">Автор:</label>
-        <input name="author">
+        <input required name="author">
         <label for="rating">Оценка:</label>
-        <select name="rating" style="background-color: #EBEBEB">
+        <select name="rating" style="background-color: #EBEBEB; padding: 8px !important;" required>
             <option value="1">⭐</option>
             <option value="2">⭐⭐</option>
             <option value="3">⭐⭐⭐</option>
@@ -85,9 +85,9 @@
         </select>
 
         <label for="duration">Срок использования:</label>
-        <input name="duration">
+        <input required name="duration">
         <label for="review">Текст отзыва:</label>
-        <textarea name="review"></textarea>
+        <textarea style="padding: 8px !important;" name="review"></textarea>
         <button>Опубликовать</button>
     </form>
 
